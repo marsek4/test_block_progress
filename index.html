@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress bar</title>
+    <link rel="stylesheet" href="progress.css">
+    
+</head>
+<body id="body">
+    <div class="first_half">
+        <div class="block_name">
+            Progress
+        </div>
+        <svg class="progress_ring" width="170" height="170" id="progress_block">
+            <circle stroke="#DCDCDC"  stroke-width="10" cx="85" cy="85" r="50" fill="transparent" id="circle_1"/>
+            <circle class="progress_ring_circle" stroke="#005dff" stroke-width="10" cx="85" cy="85" r="50" fill="transparent" id="circle_2"/>
+        </svg>
+        
+        <!-- r = (width / 2) - (strokeWidth * 2)-->
+    </div>
+    <div class="second_half">
+
+        <div class="panel">
+            
+            <div class="controllers">
+                <input type="text" class="value_input" value="50">
+                
+                <label class="first_switch">
+                    <input type="checkbox" class="switch_input" id="switch_animate">
+                    <span class="switch_slider"></span>
+                </label>
+                
+                <label class="second_switch">
+                    <input type="checkbox" class="switch_input" id="switch_hide">
+                    <span class="switch_slider"></span>
+                </label>
+
+            </div>
+
+            <div class="function_names">
+                <p class="phrases_value">Value</p>
+                <p class="phrases_animate">Animate</p>
+                <p class="phrases_hide">Hide</p>
+            </div>
+        
+        </div>
+
+    </div>
+    <script src="progress.js"></script>
+</body>
+</html>
